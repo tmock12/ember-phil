@@ -1,3 +1,25 @@
-<h2 id="title">Welcome to Ember</h2>
-
 {{outlet}}
+
+<h3>
+  Pick examples:
+</h3>
+<dl>
+  <dt>
+    \{{ phil 'pick' '1, 2, 3' }}
+  </dt>
+  <dd>
+    {{ phil 'pick' '1, 2, 3' }}
+  </dd>
+  <dt>
+    \{{ phil 'pick' 'foo, bar, baz' }}
+  </dt>
+  <dd>
+    {{ phil 'pick' 'foo, bar, baz' }}
+  </dd>
+  <dt>
+    \{{ phil 'pick' '1..100' }}
+  </dt>
+  <dd>
+    {{ phil 'pick' '1..100' }}
+  </dd>
+</dl>
