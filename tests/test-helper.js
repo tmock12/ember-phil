@@ -11,3 +11,9 @@ Qunit.assert.isWithin = function(val, min, max) {
   const message =  `${val} is within ${min}..${max}`;
   this.push(within, val, min + '..' + max, message);
 };
+
+Qunit.assert.inArray = function(val, array) {
+  const withinArray = array.indexOf(val) !== -1;
+  const message = `${val} is in ${array}`;
+  this.push(withinArray, val, message);
+};
